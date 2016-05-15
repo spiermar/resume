@@ -169,16 +169,33 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \vspace{\parsep}%
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
 % Publication list %
-%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\publicationitem}[4]{%
   \textbf{#1}%
   \newline%
   #3%
-  \hfill%
+  \newline%
   {\footnotesize\addfontfeature{Color=lightgray} #2}%
+  \newline\newline%
+  #4%
+  \vspace{\parsep}%
+}
+
+
+%%%%%%%%%%%%%%%%%%%%
+% Open Source list %
+%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\opensourceitem}[4]{%
+  \textbf{#1}%
+  \newline%
+  #2%
+  \newline%
+  {\footnotesize\addfontfeature{Color=lightgray} #3}%
   \newline\newline%
   #4%
   \vspace{\parsep}%
