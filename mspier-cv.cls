@@ -164,7 +164,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \textbf{#2}%
   \newline%
   {\footnotesize #4}%
-  \newline\newline%
+  \vspace{5mm}%
+  \newline%
   #5%
   \vspace{\parsep}%
 }
@@ -180,7 +181,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   #3%
   \newline%
   {\footnotesize\addfontfeature{Color=lightgray} #2}%
-  \newline\newline%
+  \vspace{5mm}%
+  \newline%
   #4%
   \vspace{\parsep}%
 }
@@ -196,7 +198,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   #2%
   \newline%
   {\footnotesize\addfontfeature{Color=lightgray} #3}%
-  \newline\newline%
+  \vspace{5mm}%
+  \newline%
   #4%
   \vspace{\parsep}%
 }
@@ -217,9 +220,12 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   #1&\parbox[t]{11.8cm}{%
     \textbf{#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}%
+    \newline%
     #4\vspace{\parsep}%
-  }\\\\}
+  }
+  \\\\
+}
 
 
 %%%%%%%%%%%%%%
