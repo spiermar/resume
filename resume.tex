@@ -1,0 +1,63 @@
+%!TEX TS-program = xelatex
+\documentclass[11pt, print]{friggeri-cv}
+% \addbibresource{bibliography.bib}
+\begin{document}
+\header{martin spier}
+       {performance engineer at netflix}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{contact}
+    Bay Area, CA
+    +1 (425) 351-8800
+    ~
+    \href{mailto:hello@martinspier.io}{hello@martinspier.io}
+    \href{http://martinspier.io}{martinspier.io}
+    \href{https://github.com/spiermar}{github://spiermar}
+    \href{https://twitter.com/spiermar}{twitter://@spiermar}
+    \href{https://www.linkedin.com/in/martinspier}{linkedin://martinspier}
+  \section{skills}
+    performance engineering
+    large scale systems
+    scalability
+    systems architecture
+    cloud computing
+    (aws)
+    distributed systems
+    java/jvm tuning
+    performance testing
+    (jmeter, gatling, loadrunner)
+    *nix, linux
+    tomcat, apache httpd
+    data analysis
+    (hive, presto, ipython, pandas, tableau)
+    \section{programming}
+      python
+      javascript
+      (node.js, es6)
+      java, groovy
+\end{aside}
+
+\input{experience}
+
+% \clearpage
+
+\section{publications}
+
+% \printbibsection{article}{Articles in peer-reviewed journals}
+% \printbibsection{inproceedings}{Abstracts in peer-reviewed conferences}
+
+\begin{entrylist}
+  \simpleentry
+    {Log-Based Approach for Performance Requirements Elicitation and Prioritization}
+    {Sep 2012}
+    {Requirements Engineering Conference (RE), 2012 20th IEEE International}
+    {Link to article: \url{http://goo.gl/ufDDyO}}
+  \simpleentry
+    {Development of a Parametric Model to Estimate Software Development Effort}
+    {Jun 2008}
+    {EDIPUCRS}
+    {Link to article: \url{http://goo.gl/Q1B0k7}}
+\end{entrylist}
+
+\end{document}
